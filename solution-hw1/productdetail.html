@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="page.css" />
+    <title>Page Title</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <!--logo and navigation-->
+    <a href="./productgallery.html"
+      ><img class="logo" src="../assets/logo/logo-01.svg" alt="bun-bun-logo"
+    /></a>
+    <hr />
+    <nav class="nav">
+      <p id="nav-products"><a href="./productgallery.html">Products</a></p>
+      <p id="nav-cart"><a href="./shoppingcart.html">Cart</a></p>
+    </nav>
+
+    <!--product details-->
+    <div id="product-product-detail">
+      <h1>Original Cinnamon Roll</h1>
+
+      <div>
+        <img
+          id="product-image-product-detail"
+          src="../assets/products/original-cinnamon-roll.jpg"
+          alt="original-cinnamon-roll"
+        />
+      </div>
+
+      <!--Description + choices for glazing and pack size-->
+      <div class="description">
+        <p>Customize our delicious, hand-made cinnamon rolls to your liking!</p>
+      </div>
+      <div id="choices">
+        <div>
+          <p>Glazing:</p>
+          <select name="Glazing" id="glazing-select">
+            <option value="Keep original">Keep original</option>
+            <option value="Sugar milk">Sugar milk</option>
+            <option value="Vanilla milk">Vanilla milk</option>
+            <option value="Double chocolate">Double chocolate</option>
+          </select>
+        </div>
+        <div>
+          <p>Pack Size:</p>
+          <select name="Pack size" id="pack-size">
+            <option value="1">1</option>
+            <option value="3">3</option>
+            <option value="6">6</option>
+            <option value="12">12</option>
+          </select>
+        </div>
+      </div>
+      <div id="finalizing">
+        <p>$2.49</p>
+        <button>Add to cart</button>
+      </div>
+    </div>
+  </body>
+</html>
