@@ -61,6 +61,11 @@
   padding: 10px;
 }
 
+.product-details-shopping-cart {
+  margin: 0px;
+  padding: 0px;
+}
+
 /* text/font */
 .remove-button,
 .nav {
@@ -102,7 +107,20 @@ button {
 button:hover,
 #nav-products:hover,
 #nav-cart:hover,
+.product-product-gallery:hover,
 .product-product-gallery:hover {
   background-color: yellow;
+}
+
+.product-product-gallery:hover .product-name {
+  font-weight: bold;
+}
+
+.checkout-button:hover {
+  font-weight: bold;
+}
+
+#nav-products:hover,
+#nav-cart:hover {
   font-weight: bold;
 }
