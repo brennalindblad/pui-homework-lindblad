@@ -99,8 +99,9 @@ p {
 /* button */
 button {
   border-color: black;
-  padding: 15px 40px;
+  padding: 0px 60px;
   text-align: center;
+  font-weight: bold;
 }
 
 /* hover css */
