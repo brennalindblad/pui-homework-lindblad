@@ -45,6 +45,10 @@
   align-items: center;
 }
 
+.nav {
+  margin-bottom: 30px;
+}
+
 #finalizing {
   display: flex;
   flex-direction: row;
@@ -54,6 +58,7 @@
 
 .product-product-gallery {
   margin: 15px;
+  padding: 10px;
 }
 
 /* text/font */
