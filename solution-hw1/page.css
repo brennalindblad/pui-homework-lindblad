@@ -1,4 +1,4 @@
-/* sizes + styling of images and logo */
+/* SIZES AND STYLING of images and logo for product gallery, product detail,and shopping cart pages*/
 .logo {
   width: 400px;
 }
@@ -24,6 +24,9 @@
   border-color: black;
 }
 
+/* SPACING */
+
+/* setting a width */
 .description,
 #glazing-select,
 #pack-size,
@@ -31,7 +34,7 @@
   width: 300px;
 }
 
-/* spacing */
+/* flexbox to center items across pages */
 #product-gallery,
 #product-product-detail,
 #shopping-cart,
@@ -45,10 +48,12 @@
   align-items: center;
 }
 
+/* adding margin to nav */
 .nav {
   margin-bottom: 30px;
 }
 
+/* flexbox to arrange price and add to cart button on product details page */
 #finalizing {
   display: flex;
   flex-direction: row;
@@ -56,26 +61,30 @@
   padding-top: 30px;
 }
 
+/* adding padding and margin between elements on product gallery page */
 .product-product-gallery {
   margin: 15px;
   padding: 10px;
 }
 
+/* getting rid of padding and margin between product details on shopping cart page */
 .product-details-shopping-cart {
   margin: 0px;
   padding: 0px;
 }
 
-/* text/font */
+/* TEXT AND FONT  */
 .remove-button,
 .nav {
   text-transform: uppercase;
 }
 
+/* getting rid of link underlining */
 a {
   text-decoration: none;
 }
 
+/* changing font */
 p,
 a,
 h1 {
@@ -84,6 +93,7 @@ h1 {
   color: black;
 }
 
+/* changing weight and sizes of font */
 h1 {
   font-weight: normal;
 }
@@ -96,7 +106,7 @@ p {
   font-size: small;
 }
 
-/* button */
+/* BUTTON */
 button {
   border-color: black;
   padding: 15px 60px;
@@ -104,7 +114,8 @@ button {
   font-weight: bold;
 }
 
-/* hover css */
+/* HOVER CSS */
+/* on hover, the navigation items, buttons, and products will turn yellow */
 button:hover,
 #nav-products:hover,
 #nav-cart:hover,
@@ -113,14 +124,17 @@ button:hover,
   background-color: yellow;
 }
 
+/* on hover, the name of product turns bold in proudct gallery */
 .product-product-gallery:hover .product-name {
   font-weight: bold;
 }
 
+/* on hover, the checkout button text should bold */
 .checkout-button:hover {
   font-weight: bold;
 }
 
+/* on hover, the navigation text should bold */
 #nav-products:hover,
 #nav-cart:hover {
   font-weight: bold;
