@@ -26,15 +26,13 @@
         </div>
         <div class="intro-text">
           <hr />
-          <h1>Our hand-made cinnamon rolls</h1>
+          <h1>Original Cinnamon Roll</h1>
         </div>
       </div>
     </nav>
   </div>
     <!--product details-->
-    <div id="product-product-detail">
-      <h1>Original Cinnamon Roll</h1>
-
+    <div class="product-details-container">
       <div>
         <img
           id="product-image-product-detail"
@@ -44,34 +42,38 @@
       </div>
 
       <!--Description + choices for glazing and pack size-->
-      <div class="description">
-        <p>Customize our delicious, hand-made cinnamon rolls to your liking!</p>
-      </div>
-      <div id="choices">
-        <div>
-          <p>Glazing:</p>
-          <select name="Glazing" id="glazing-select">
-            <option value="Keep original">Keep original</option>
-            <option value="Sugar milk">Sugar milk</option>
-            <option value="Vanilla milk">Vanilla milk</option>
-            <option value="Double chocolate">Double chocolate</option>
-          </select>
+      <div class="product-details-details">
+        <div class="description">
+          <p>Customize our delicious, hand-made cinnamon rolls to your liking!</p>
         </div>
-        <div>
-          <p>Pack Size:</p>
-          <select name="Pack size" id="pack-size">
-            <option value="1">1</option>
-            <option value="3">3</option>
-            <option value="6">6</option>
-            <option value="12">12</option>
-          </select>
+        <div id="choices">
+          <div class="glazing-container">
+            <p>Glazing:</p>
+            <select name="Glazing" class="glazing-select">
+              <option value="Keep original">Keep original</option>
+              <option value="Sugar milk">Sugar milk</option>
+              <option value="Vanilla milk">Vanilla milk</option>
+              <option value="Double chocolate">Double chocolate</option>
+            </select>
+          </div>
+          <div class="pack-size-container">
+            <p>Pack Size:</p>
+            <select name="Pack size" class="pack-size">
+              <option value="1">1</option>
+              <option value="3">3</option>
+              <option value="6">6</option>
+              <option value="12">12</option>
+            </select>
+          </div>
+        </div>
+        <!--This finalizing step shows the price of this item, and the add to cart button-->
+        <div id="finalizing">
+          <p>$2.49</p>
+          <button>Add to cart</button>
         </div>
       </div>
-      <!--This finalizing step shows the price of this item, and the add to cart button-->
-      <div id="finalizing">
-        <p>$2.49</p>
-        <button>Add to cart</button>
       </div>
     </div>
+      
   </body>
 </html>
