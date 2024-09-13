@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Shopping Cart</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <!--logo and navigation: this includes the bun bun bake shop logo and the navigation links of the product page and cart page-->
+
+    <div class="header-container">
+      <div class="logo-container">
+        <a href="./index.html"
+          ><img
+            class="logo"
+            src="../assets/logo/logo-01.svg"
+            alt="bun-bun-logo"
+        /></a>
+      </div>
+      <div class="nav-container">
+        <nav>
+        <div class="links">
+          <p id="nav-products"><a href="./index.html">Products</a></p>
+          <p id="nav-cart"><a href="./shoppingcart.html">Cart</a></p>
+        </div>
+        <div class="intro-text">
+          <hr />
+          <h1>Our hand-made cinnamon rolls</h1>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+    <!--shopping cart: products in the cart and their details. Total and checkout button is at the bottom-->
+    <div id="shopping-cart">
+      <h1>Shopping Cart</h1>
+
+      <div>
+        <!--Products have a image, remove button, kind, glaze, pack size, and price.-->
+        <a class="product-shopping-cart" href="./productdetail.html">
+          <img
+            class="product-image-shopping-cart"
+            src="../assets/products/original-cinnamon-roll.jpg"
+            alt="original-cinnamon-roll"
+          />
+          <p class="remove-button">Remove</p>
+          <div class="product-details-shopping-cart">
+            <p>Original Cinnamon Roll</p>
+            <p>Glazing: Keep original</p>
+            <p>Pack size: 1</p>
+            <h2 class="price-detail-shopping-cart">$2.49</h2>
+          </div>
+        </a>
+      </div>
+      <div>
+        <a class="product-shopping-cart" href="./productdetail.html">
+          <img
+            class="product-image-shopping-cart"
+            src="../assets/products/double-chocolate-cinnamon-roll.jpg"
+            alt="double-chocolate-cinnamon-roll"
+          />
+          <p class="remove-button">Remove</p>
+          <div class="product-details-shopping-cart">
+            <p>Double Chocolate Cinnamon Roll</p>
+            <p>Glazing: Sugar milk</p>
+            <p>Pack size: 6</p>
+            <h2 class="price-detail-shopping-cart">$27.45</h2>
+          </div>
+        </a>
+      </div>
+      <h2>Total: $29.94</h2>
+      <button class="checkout-button">Checkout</button>
+    </div>
+  </body>
+</html>
