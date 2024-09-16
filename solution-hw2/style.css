@@ -220,7 +220,53 @@ hr {
 .shopping-cart {
   display: flex;
   direction: row;
+  margin-top: 100px;
 }
 
-.item-1 {
+.product-gallery {
+  width: 1100px;
+}
+
+.product-product-gallery {
+  width: 303px;
+}
+
+.cart-item,
+.cart-item-container {
+  display: flex;
+  direction: row;
+}
+
+.cart-item-container {
+  width: 750px;
+}
+
+.cart-item {
+  height: 300px;
+  width: 700px;
+}
+.item-image {
+  padding-right: 30px;
+}
+
+.product-details-shopping-cart {
+  text-align: left;
+  line-height: 30px;
+}
+
+.price {
+  display: flex;
+  justify-content: end;
+  padding-top: 75px;
+}
+
+.bottom-shopping-cart {
+  display: flex;
+  direction: row;
+}
+
+.bottom-shopping-cart-total {
+  width: 560px;
+  display: flex;
+  justify-content: center;
 }

@@ -35,7 +35,8 @@
     <!--shopping cart: products in the cart and their details. Total and checkout button is at the bottom-->
     <div class="shopping-cart">
         <!--Products have a image, remove button, kind, glaze, pack size, and price.-->
-        <div class="item-1">
+        <div class="cart-item-container">
+        <div class="cart-item">
           <div class="item-image">
             <a class="product-shopping-cart" href="./productdetail.html">
               <img
@@ -50,28 +51,51 @@
               <p>Original Cinnamon Roll</p>
               <p>Glazing: Keep original</p>
               <p>Pack size: 1</p>
-              <p class="price-detail-shopping-cart">$2.49</p>
             </div>
           </a>
         </div>
-      <div class="item-2">
-          <a class="product-shopping-cart" href="./productdetail.html">
-            <img
-              class="product-image-shopping-cart"
-              src="../assets/products/double-chocolate-cinnamon-roll.jpg"
+        <div class="price">
+            <p class="price-detail-shopping-cart">$2.49</p>
+        </div>
+        </div>
+
+        <div class="cart-item-container">
+        <div class="cart-item">
+          <div class="item-image">
+            <a class="product-shopping-cart" href="./productdetail.html">
+              <img
+                class="product-image-shopping-cart"
+                src="../assets/products/double-chocolate-cinnamon-roll.jpg"
               alt="double-chocolate-cinnamon-roll"
-            />
-            <p class="remove-button">Remove</p>
+              />
+              <p class="remove-button">Remove</p>
+          </div>
+        
             <div class="product-details-shopping-cart">
               <p>Double Chocolate Cinnamon Roll</p>
               <p>Glazing: Sugar milk</p>
               <p>Pack size: 6</p>
-              <p class="price-detail-shopping-cart">$27.45</p>
             </div>
           </a>
+        </div>
+        <div class="price">
+            <p class="price-detail-shopping-cart">$27.45</p>
+        </div>
+        </div>
+        <hr/>
+        <div class="bottom-shopping-cart">
+          <div class="bottom-shopping-cart-total">
+            <h2>Total:</h2>
+          </div>
+          <div class="bottom-shopping-cart-checkout">
+            <div>
+            <h2>$29.94</h2>
+            </div>
+            <button class="checkout-button">Checkout</button>
+
+          </div>
+  
       </div>
-      <h2>Total: $29.94</h2>
-      <button class="checkout-button">Checkout</button>
     </div>
   </body>
 </html>
