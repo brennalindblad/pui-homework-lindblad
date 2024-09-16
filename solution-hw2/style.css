@@ -24,57 +24,6 @@
   border-color: black;
 }
 
-/* SPACING */
-
-/* setting a width */
-.description,
-.glazing-select,
-.pack-size,
-#finalizing {
-  width: 500px;
-}
-
-/* flexbox to center items across pages */
-.shopping-cart,
-.product-shopping-cart,
-.nav,
-#choices {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-
-.nav {
-  margin-bottom: 30px;
-}
-
-/* flexbox to arrange price and add to cart button on product details page */
-#finalizing {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-/* adding padding and margin between elements on product gallery page */
-.product-product-gallery {
-  margin: 15px;
-  padding: 10px;
-}
-
-/* getting rid of padding and margin between product details on shopping cart page, centering text and making line height smaller than default */
-.product-details-shopping-cart {
-  margin: 0px;
-  padding-bottom: 40px;
-  text-align: center;
-  line-height: 5px;
-}
-
-.price-detail-shopping-cart {
-  margin-top: 40px;
-}
-
 /* TEXT AND FONT  */
 .remove-button,
 #nav-products,
@@ -160,18 +109,35 @@ button:hover,
   font-weight: bold;
 }
 
-/* HW2 additions */
-/* flexbox */
-.header-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+/* SPACING */
+/* setting a width */
+.description,
+.glazing-select,
+.pack-size,
+#finalizing {
+  width: 500px;
 }
 
-.links {
-  display: flex;
-  justify-content: flex-end;
-  margin-right: 40px;
+.nav {
+  margin-bottom: 30px;
+}
+
+/* adding padding and margin between elements on product gallery page */
+.product-product-gallery {
+  margin: 15px;
+  padding: 10px;
+}
+
+/* getting rid of padding and margin between product details on shopping cart page, centering text and making line height smaller than default */
+.product-details-shopping-cart {
+  margin: 0px;
+  padding-bottom: 40px;
+  text-align: center;
+  line-height: 5px;
+}
+
+.price-detail-shopping-cart {
+  margin-top: 40px;
 }
 
 #nav-products,
@@ -188,22 +154,6 @@ hr {
   padding-top: 10px;
 }
 
-.product-gallery {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin-right: 100px;
-  margin-left: 100px;
-  justify-content: space-between;
-}
-
-.product-details-container {
-  display: flex;
-  flex-direction: row;
-  margin-left: 100px;
-  margin-top: 60px;
-}
-
 .product-details-details {
   margin-right: 60px;
   margin-left: 65px;
@@ -217,24 +167,12 @@ hr {
   padding-bottom: 120px;
 }
 
-.shopping-cart {
-  display: flex;
-  flex-direction: row;
-  margin-top: 100px;
-}
-
 .product-gallery {
   width: 1100px;
 }
 
 .product-product-gallery {
   width: 303px;
-}
-
-.cart-item,
-.cart-item-container {
-  display: flex;
-  flex-direction: row;
 }
 
 .cart-item-container {
@@ -254,6 +192,66 @@ hr {
   line-height: 30px;
 }
 
+/* FLEXBOX */
+/* flexbox to center items across pages */
+.shopping-cart,
+.product-shopping-cart,
+.nav,
+#choices {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* flexbox to arrange price and add to cart button on product details page */
+#finalizing {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.links {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 40px;
+}
+
+.product-gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-right: 100px;
+  margin-left: 100px;
+  justify-content: space-between;
+}
+
+.product-details-container {
+  display: flex;
+  flex-direction: row;
+  margin-left: 100px;
+  margin-top: 60px;
+}
+
+.shopping-cart {
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+}
+
+.cart-item,
+.cart-item-container {
+  display: flex;
+  flex-direction: row;
+}
+
 .price {
   display: flex;
   justify-content: end;
@@ -269,4 +267,10 @@ hr {
   width: 560px;
   display: flex;
   justify-content: center;
+}
+
+.shopping-cart {
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
 }
