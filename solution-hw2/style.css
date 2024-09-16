@@ -164,7 +164,7 @@ button:hover,
 /* flexbox */
 .header-container {
   display: flex;
-  direction: row;
+  flex-direction: row;
   justify-content: space-between;
 }
 
@@ -190,7 +190,7 @@ hr {
 
 .product-gallery {
   display: flex;
-  direction: row;
+  flex-direction: row;
   flex-wrap: wrap;
   margin-right: 100px;
   margin-left: 100px;
@@ -199,7 +199,7 @@ hr {
 
 .product-details-container {
   display: flex;
-  direction: row;
+  flex-direction: row;
   margin-left: 100px;
   margin-top: 60px;
 }
@@ -219,7 +219,7 @@ hr {
 
 .shopping-cart {
   display: flex;
-  direction: row;
+  flex-direction: row;
   margin-top: 100px;
 }
 
@@ -234,7 +234,7 @@ hr {
 .cart-item,
 .cart-item-container {
   display: flex;
-  direction: row;
+  flex-direction: row;
 }
 
 .cart-item-container {
@@ -262,7 +262,7 @@ hr {
 
 .bottom-shopping-cart {
   display: flex;
-  direction: row;
+  flex-direction: row;
 }
 
 .bottom-shopping-cart-total {
