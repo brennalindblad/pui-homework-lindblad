@@ -65,6 +65,8 @@ function populateDropdownPackSize() {
 
 // updates the total price depending on change of glazing and packsize
 // updates UI by changing innerHTML of total price
+// citing: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find
+// citing: https://stackoverflow.com/questions/9907419/how-to-get-a-key-in-a-javascript-object-by-its-value
 function updatePrice() {
   const selectedGlaze = document.querySelector("#glazing").value;
   const selectedPackSize = document.querySelector("#pack-size").value;
