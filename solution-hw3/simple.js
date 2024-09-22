@@ -1,6 +1,6 @@
 const basePrice = 2.49;
 
-// creating array of objects for both glazing and pack size
+// creates array of objects for both glazing and pack size
 let allGlazes = [
   {
     glazing: "Keep original",
@@ -39,10 +39,11 @@ let allPackSizes = [
   },
 ];
 
-// populate dropdown menu
+// getting selected glazing option and pack size option
 const selectGlazingTag = document.querySelector("#glazing");
 const selectPackSizeTag = document.querySelector("#pack-size");
 
+// for loop populates glazing dropdown menu, for each glazing in allGlazes object, it creates an option in the select tag and gives it the value and text from each object
 function populateDropdownGlazing() {
   for (let glazing in allGlazes) {
     let glazingOption = document.createElement("option");
@@ -52,6 +53,7 @@ function populateDropdownGlazing() {
   }
 }
 
+// for loop populates pack size dropdown menu, for each packsize in allPackSizes object, it creates an option in the select tag and gives it the value and text from each object
 function populateDropdownPackSize() {
   for (let packSize in allPackSizes) {
     let packSizeOption = document.createElement("option");
@@ -61,8 +63,8 @@ function populateDropdownPackSize() {
   }
 }
 
-// updating the total price depending on change of glazing and packsize
-// updating UI by changing innerHTML of total price
+// updates the total price depending on change of glazing and packsize
+// updates UI by changing innerHTML of total price
 function updatePrice() {
   const selectedGlaze = document.querySelector("#glazing").value;
   const selectedPackSize = document.querySelector("#pack-size").value;
@@ -83,9 +85,6 @@ function updatePrice() {
   document.querySelector("#total-price").innerText = `$${totalPrice}`;
 }
 
-// Populate glazing and pack size dropdowns
-// should change the UI
-// calculates the initial price
 window.onload = function () {
   populateDropdownGlazing();
   populateDropdownPackSize();
