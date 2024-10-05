@@ -87,7 +87,7 @@ function updatePrice() {
   ).toFixed(2);
 
   document.querySelector("#total-price").innerText = `$${totalPrice}`;
-  newRoll = new Roll(rollType, selectedGlaze, selectedPackSize, totalPrice);
+  newRoll = new Roll(rollType, selectedGlaze, selectedPackSize, basePrice);
 }
 
 window.onload = function () {
@@ -128,3 +128,5 @@ class Roll {
     this.basePrice = basePrice;
   }
 }
+
+// hw 5
