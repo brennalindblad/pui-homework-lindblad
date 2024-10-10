@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Product Detail</title>
+    <meta charset="UTF-8" />
+    <script src="script.js"></script>
+    <script src="rollsData.js"></script>
+    <script src="details.js"></script>
+    <script src="local-storage.js"></script>
+  </head>
+
+  <body>
+    <!--logo and navigation: this includes the bun bun bake shop logo and the navigation links of the product page and cart page-->
+
+    <div class="header-container">
+      <div class="logo-container">
+        <a href="./index.html"
+          ><img
+            class="logo"
+            src="../assets/logo/logo-01.svg"
+            alt="bun-bun-logo"
+        /></a>
+      </div>
+      <div class="nav-container">
+        <nav>
+          <div class="links">
+            <p id="nav-products"><a href="./index.html">Products</a></p>
+            <p id="nav-cart"><a href="./shoppingcart.html">Cart</a></p>
+          </div>
+          <div class="intro-text">
+            <hr />
+            <h1 id="roll-header"></h1>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!--product details-->
+    <div class="product-details-container">
+      <div>
+        <img
+          id="product-image-product-detail"
+          src=""
+          alt="original-cinnamon-roll"
+        />
+      </div>
+
+      <!--Description + choices for glazing and pack size-->
+      <div class="product-details-details">
+        <div class="description">
+          <p>
+            Customize our delicious, hand-made cinnamon rolls to your liking!
+          </p>
+        </div>
+        <div id="choices">
+          <div class="glazing-container">
+            <p>Glazing:</p>
+            <select
+              name="Glazing"
+              class="glazing-select"
+              id="glazing"
+              onchange="updatePrice()"
+            >
+              <!-- options populated dynamically -->
+            </select>
+          </div>
+          <div class="pack-size-container">
+            <p>Pack Size:</p>
+            <select
+              name="Pack size"
+              class="pack-size"
+              id="pack-size"
+              onchange="updatePrice()"
+            >
+              <!-- options populated dynamically -->
+            </select>
+          </div>
+        </div>
+        <!--This finalizing step shows the price of this item, and the add to cart button-->
+        <div id="finalizing">
+          <p id="total-price"></p>
+          <button class="add-to-cart-button">Add to cart</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

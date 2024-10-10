@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="script.js"></script>
+    <script src="cart.js"></script>
+    <script src="rollsData.js"></script>
+    <script src="local-storage.js"></script>
+
+
+
+    <title>Shopping Cart</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <!--logo and navigation: this includes the bun bun bake shop logo and the navigation links of the product page and cart page-->
+
+    <div class="header-container">
+      <div class="logo-container">
+        <a href="./index.html"
+          ><img
+            class="logo"
+            src="../assets/logo/logo-01.svg"
+            alt="bun-bun-logo"
+        /></a>
+      </div>
+      <div class="nav-container">
+        <nav>
+          <div class="links">
+            <p id="nav-products"><a href="./index.html">Products</a></p>
+            <p id="nav-cart"><a href="./shoppingcart.html">Cart</a></p>
+          </div>
+          <div class="intro-text">
+            <hr />
+            <h1>Our hand-made cinnamon rolls</h1>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!--shopping cart: products in the cart and their details. Total and checkout button is at the bottom-->
+
+    <div class="shopping-cart">
+      <div class="cart-list"></div>
+      <!--Products have a image, remove button, kind, glaze, pack size, and price.-->
+      <template id="cart-item-container">
+        <div class="cart-item">
+          <div>
+            <div class="cart-image-details">
+              <div class="item-image">
+                <img
+                  class="product-image-shopping-cart"
+                  src=""
+                  alt="cinnamon-roll"
+                />
+              </div>
+              <div class="product-details-shopping-cart">
+                <p id="type-cart"></p>
+                <p id="glazing-cart"></p>
+                <p id="pack-size-cart"></p>
+              </div>
+              <div class="price"></div>
+                <p class="price-detail-shopping-cart"></p>
+              </div>
+            </div>
+            <p class="remove-button">Remove</p>
+          </div>
+        </div>
+      </template>
+      <hr />
+      <div class="bottom-shopping-cart">
+        <div class="bottom-shopping-cart-total">
+          <h2>Total:</h2>
+        </div>
+        <div class="bottom-shopping-cart-checkout">
+          <div>
+            <h2 class="cart-total"></h2>
+          </div>
+          <button class="checkout-button">Checkout</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
