@@ -3,7 +3,7 @@ let newRoll;
 let rollType;
 
 class Roll {
-  constructor(rollType, rollGlazing, packSize, basePrice, totalPrice) {
+  constructor(rollType, rollGlazing, packSize, basePrice) {
     this.type = rollType;
     this.glazing = rollGlazing;
     this.size = packSize;
