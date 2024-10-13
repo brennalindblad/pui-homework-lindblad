@@ -1,8 +1,8 @@
 let rollsInCart = new Set([
-  new Roll("Original", "Sugar Milk", "1", 2.49),
-  new Roll("Walnut", "Vanilla Milk", "12", 3.49),
-  new Roll("Raisin", "Sugar Milk", "3", 2.99),
-  new Roll("Apple", "Original", "3", 3.49),
+  // new Roll("Original", "Sugar Milk", "1", 2.49),
+  // new Roll("Walnut", "Vanilla Milk", "12", 3.49),
+  // new Roll("Raisin", "Sugar Milk", "3", 2.99),
+  // new Roll("Apple", "Original", "3", 3.49),
 ]);
 
 function saveToLocalStorage() {

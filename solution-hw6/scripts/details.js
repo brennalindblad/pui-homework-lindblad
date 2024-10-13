@@ -41,8 +41,11 @@ window.onload = function () {
   function populateDropdownGlazing() {
     for (let glazing in allGlazes) {
       var glazingOption = document.createElement("option");
-      glazingOption.value = allGlazes[glazing].glazing;
-      glazingOption.text = allGlazes[glazing].glazing;
+      const glaze = allGlazes[glazing];
+      glazingOption.value = glaze.glazing;
+      const priceAdditionText =
+        glaze.glazingPrice == 0 ? "" : `(+$${glaze.glazingPrice})`;
+      glazingOption.text = `${glaze.glazing} ${priceAdditionText}`;
       selectGlazingTag.add(glazingOption);
     }
   }
