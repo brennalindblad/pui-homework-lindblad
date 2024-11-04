@@ -125,17 +125,26 @@ Remember to keep track of your prompts and usage for [FP4 writeup](#part-6-gener
 
 ## Project Description
 
-Briefly restate your motivation and a short description of your project.
+My motivation is to provide an interactive way to test out different pathways to win the electoral college.
 
 ## High-Fi Prototypes
 
 ### _Prototype 1_
 
-![title for prototype1](images/prototype1.png)
+![Prototype 1](images/prototype_1.png)
 
-A brief description and summary of the user feedback (\<100 words, 2 images)
+The users didn't like the yellow and was confused if the circles represent the total votes or number of votes needed.
 
 ### _Prototype 2_
+
+![Prototype 2](images/prototype_2.png)
+The users also liked the dots as opposed to the one circle, but they had conflicting views on this.
+…
+
+### _Prototype 3_
+
+![Prototype 3](images/prototype1_3.png)
+The users liked the state outlines, how the states were in the middle, and how the states were purple.
 
 …
 
@@ -143,59 +152,63 @@ A brief description and summary of the user feedback (\<100 words, 2 images)
 
 Discuss the user feedback you got during the evaluation / usability test (\~300 words). Indicate which feedback you implemented, inspired new directions, or otherwise influenced your final design.
 
+From these three visual directions I got a lot of good feedback on what users preferred as well as certain preferences that went beyond my current setup. I got feedback on little things, like increaseing my font size for increased readability. One thing I thought was interesting was that the size of the candidate area is more likely to be associated with how many votes they currently HAVE, not how many they need, so I decided to switch that around to be more in line with what users expect. People liked both the larger circle and the smaller dots and were split. People also liked how the states had a real outline of the state itself rather than a more abstract orb. They also felt too realistic and if it appeared more "cartoonish" that could be more approachable.
+
 ## Updated Designs
 
+![updated design](images/prototype1.png)
 Show screenshots of your updated design based on the user feedback (\<100 words, \~2 images).
 
 ## Feedback Summary
 
-Summarize the feedback you received in the lab session and discuss how it influenced your design (\~300 words).
+From our lab session, I got a lot of good feedback on how to represent and extend my idea itself.One person gave me an idea to combine both the dots and circle to signify how may current votes they have. Instead of making assumptions on what state is for sure blue or red and not a swing state, I could present all the states on a gradient of blue and red and the user can drag the state to be in a different category if they choose. I also got an idea that by using the scale of the states I could more explicitly explain how the electoral college works and have this serve more educational purpose. This would also increase the longevity beyond this specific election and point in time, which was one of my initital concerns about the project.
+I think this will change the visauls of my design, focusing more on all the states and filling up the entire screen instead of soley focusing on swing states. I will also incorporate more context and educational text within the design.
 
 ## Milestones
 
 Outline weekly milestones to plan your expected implementation progress until the end of the semester (\~300 words).
+To ensure I can implement my idea in the alloted time, I need to break it down into a series of steps. I need to ensure I can access the libraries I want to use within my code, especially for interactions for my drag and drop functionality and any movement from the states. I then need to code the basic logic of vote counting: subtracting from votes needed and adding to total votes for candidate. Once a candidate reaches 270 the threshold is reached and the interaction is over.
+Coding the basic UI, like HTML and CSS also will take time. Then I need to prepare the data for each state like name, amount of votes, and likelyhood to be a blue, purple, or red state. Then I need to work on the functionality of dragging states and dragging them to certain area (can do based on coordinates) to trigger the logic of vote counting. It would be nice to have a week dedicated for bug fixes and final touches to ensure I have a polished and fully functioning result. This also gives me wiggle room if one aspect of the project takes longer than expected. I then need to create a writeup and gather documentation for presenting this idea.
 
 ### _Implementation Plan_
 
-- [ ] Week 9 Oct 28 \- Nov 1:
-  - [x] FP1 due
-  - [ ] ...
-- [ ] Week 10 Nov 4 \- Nov 8:
-
-  - [ ] FP2 due
-
-- [ ] Week 11 Nov 11 \- Nov 15:
-- [ ] Week 12 Nov 18 \- Nov 22:
-- [ ] Week 13 Nov 25 \- Nov 29:
-
-  - [ ] Thanksgiving
-
-- [ ] Week 14 Dec 2 \- Dec 6:
-  - [ ] FP4 due
+- [ ] Nov 4 \- Nov 8:
+      Ensuring I can access the libraries I want to use within my code.
+      Coding the basic logic of vote counting: subtracting from votes needed and adding to total votes for candidate. Once a candidate reaches 270 the threshold is reached and the interaction is over.
+- [ ] Nov 11 \- Nov 15:
+      Coding the basic UI: HTML and css
+- [ ] Nov 18 \- Nov 22:
+      Preparing data for each state: name and amount of votes.
+- [ ] Nov 25 \- Nov 29:
+      Working on functionality of dragging states and dragging them to certain area (can do based on coordinates) to trigger the logic of vote counting.
+- [ ] Dec 2 \- Dec 6:
+      Bug fixes and finishing touches.
+- [ ] Dec 9 \- Dec 13:
+      Creating writeup and gathering documentation for presenting.
 
 ### _Libraries and Other Components_
 
-List the JS libraries and other components (if applicable) that you plan to use.
+React DnD
+D3.js
 
 -
 
 ## Generative AI Use Plan
 
-Outline how you plan to use Generative AI tools to aid in the implementation (\~300 words).
+I think GenAI would be good for getting a sense of what is going on when debugging. I think also if I don't know how to implement something I could ask it to give a broad step by step approach that gives me a basic idea of what to look into further based on what I do not understand.
 
 ### _Tool Use_
 
 What would you use? Edit the list given your plan. For each tool, explain briefly on what do you expect Generative AI to help you with and what might it not be able to help you with.
 
 - ChatGPT
-  - I will use it for … because it can help me …
-  - I will not use it for … because it might not be able to help me with …
-- GitHub Copilot
-- ...
+  - I will use it for giving me a broad idea of what steps I need to take and which areas I need to look into further because it can help me not neccesarily based on super specific information, but more general information.
+  - I will use it for debugging purposes to see if it spots simple fixes when I get stuck because it can do that without the context of my entire code base.
+  - I will not use it for entire blocks of generated code because it doesn't have the specific context of my intentions and conventions and it might not compile correctly, making me more confused.
 
 ### _Responsible Use_
 
-How would you use Generative AI responsibly?
+I'll use GenAI responsibly by following the guidelines I set out for myself and by not treating it as an expert when there is a lot of context for any given coding project. I'll refer to others who might know best practices that GenAI doesn't have complete access to.
 
 ---
 
