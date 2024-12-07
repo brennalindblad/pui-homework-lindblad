@@ -1,0 +1,38 @@
+<!-- Lets think about this:
+ get the sidebar going
+ get the articles going within the sidebar
+ try to get the world in there or a google map api? or simply idk
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NYT Articles</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>NYT Worldview</h1>
+
+    <!-- slider -->
+    <form>
+      <input
+        type="range"
+        id="value"
+        value="1851"
+        step="1"
+        min="1851"
+        max="2024"
+        oninput="outputUpdate(value)"
+      />
+      <output for="value" id="output">1851</output>
+    </form>
+
+    <!--TODO: have it start at the first published year? -->
+    <!-- display articles here -->
+
+    <!-- Link to JavaScript file -->
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
