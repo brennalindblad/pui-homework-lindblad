@@ -1,33 +1,58 @@
-<!-- Lets think about this:
- get the sidebar going
- get the articles going within the sidebar
- try to get the world in there or a google map api? or simply idk
--->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NYT Articles</title>
+    <title>NYT Worldview</title>
     <link rel="stylesheet" href="style.css" />
+    <script type="module" src="script.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://unpkg.com/topojson@3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/versor@0.0.3"></script>
   </head>
   <body>
-    <h1>NYT Worldview</h1>
+    <div class="container">
+      <div class="map-container">
+        <img
+          src="/Users/brennalindblad/Documents/GitHub/pui-homework-lindblad/final-project/assets/outer-space.jpg"
+        />
+        <canvas id="map"></canvas>
+      </div>
+      <div class="article-container">
+        <div class="top-header">
+          <p>WORLDVIEW</p>
+        </div>
+        <div class="header">
+          <div class="regions">
+            <span>Israel-Palestine</span>
+            <span>Ukraine-Russia</span>
+            <span>Syria</span>
+          </div>
+        </div>
+        <div class="content">
+          <div class="article">
+            <h2>Tuesday Briefing: Syrian Rebels Rush to Establish Order</h2>
+            <p>Plus a lawsuit for trans-rights in China</p>
+            <p class="author">By GAYA GUPTA</p>
+            <hr />
+          </div>
+          <div class="article">
+            <h2>Tuesday Briefing: Syrian Rebels Rush to Establish Order</h2>
+            <p>Plus a lawsuit for trans-rights in China</p>
+            <p class="author">By GAYA GUPTA</p>
+            <hr />
+          </div>
+          <div class="article">
+            <h2>Tuesday Briefing: Syrian Rebels Rush to Establish Order</h2>
+            <p>Plus a lawsuit for trans-rights in China</p>
+            <p class="author">By GAYA GUPTA</p>
+            <hr />
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- slider -->
-    <form>
-      <input
-        type="range"
-        id="value"
-        value="1851"
-        step="1"
-        min="1851"
-        max="2024"
-        oninput="outputUpdate(value)"
-      />
-      <output for="value" id="output">1851</output>
-    </form>
 
     <!--TODO: have it start at the first published year? -->
     <!-- display articles here -->
