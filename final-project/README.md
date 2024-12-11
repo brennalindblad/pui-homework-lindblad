@@ -111,7 +111,7 @@ Document the changes and progress of your project. How have you followed or chan
 
 ## Implementation Plan Updates
 
-- [ ] ...
+-
 
 ## Generative AI Use Plan Updates
 
