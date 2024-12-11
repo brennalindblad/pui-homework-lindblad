@@ -1,32 +1,17 @@
-/* Global Styles */
+/* global styles */
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif,
     sans-serif;
-  margin: 20px;
-  padding: 0;
 }
 
-.container {
-  display: flex;
-  flex-direction: row;
-}
-
-/* Article Container Styles */
-.article-container {
-  display: flex;
-  flex-direction: column;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-/* Header Styles */
+/* header styles */
 .header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
+  flex-direction: column;
+  /* justify-content: space-between;
+  align-items: center; */
+  /* margin-bottom: 20px; */
 }
 
 .header h1 {
@@ -50,12 +35,36 @@ body {
   font-weight: bold;
 }
 
-.map-container {
+.container {
   display: flex;
   flex-direction: row;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
 }
 
-/* Article Styles */
+.map-container {
+  position: sticky;
+  margin: 10px;
+}
+
+.map {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* article container styles */
+.article-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  height: 100%;
+  overflow: scroll;
+}
+
+/* article styles */
 .content {
   display: flex;
   flex-direction: column;
@@ -80,8 +89,73 @@ body {
   padding-bottom: 25px;
 }
 
+.region-heading {
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.region-heading.active {
+  font-weight: bold;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
 /* slider styles */
-form {
-  margin-top: 25px;
-  text-align: center;
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+/* Style for the range slider itself */
+input[type="range"] {
+  width: 100%;
+  height: 8px;
+  background: #ddd;
+  outline: none;
+  border-radius: 5px;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+input[type="range"]:hover {
+  opacity: 1;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #4caf50;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8px;
+  background: #ddd;
+  border-radius: 5px;
+}
+
+/* For Firefox */
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #4caf50;
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 8px;
+  background: #ddd;
+  border-radius: 5px;
 }
